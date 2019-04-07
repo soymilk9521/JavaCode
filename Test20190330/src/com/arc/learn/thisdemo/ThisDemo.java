@@ -4,21 +4,21 @@ public class ThisDemo {
 
 	public static void main(String[] args) {
 		/*
-		 * this关键字
-		 *  1. 特点：
-		 *   1.1. this代表所在函数所属对象的引用。
-		 *   1.2. 换言之，this代表本类对象引用。
-		 *   1.3. 简单说，哪个对象调用this所在的函数，this就代表哪个对象引用。
-		 *  2. this关键字内存图解：
-		 *  3. 构造函数调用构造函数
-		 *  	3.1. this.Person(); （X） 
-		 *  		错误原因：构造函数是创建对象时给对象初始化使用，this代表当前对象。
-		 *                  构造函数先于this关键字产生运行消失。
-		 *  	3.2. 注意：构造函数中调用构造函数时，必须放在第一行。原因构造函数初始化要先执行。
-		 *  	          正确写法：this(name);
-		 *      3.3. 图解构造函数调用构造函数
-		 *  4. this调用本类函数。   
-		 *  5. 比较两个人年龄是否相等
+		 * this鹿脴录眉脳脰
+		 *  1. 脤脴碌茫拢潞
+		 *   1.1. this麓煤卤铆脣霉脭脷潞炉脢媒脣霉脢么露脭脧贸碌脛脪媒脫脙隆拢
+		 *   1.2. 禄禄脩脭脰庐拢卢this麓煤卤铆卤戮脌脿露脭脧贸脪媒脫脙隆拢
+		 *   1.3. 录貌碌楼脣碌拢卢脛脛赂枚露脭脧贸碌梅脫脙this脣霉脭脷碌脛潞炉脢媒拢卢this戮脥麓煤卤铆脛脛赂枚露脭脧贸脪媒脫脙隆拢
+		 *  2. this鹿脴录眉脳脰脛脷麓忙脥录陆芒拢潞
+		 *  3. 鹿鹿脭矛潞炉脢媒碌梅脫脙鹿鹿脭矛潞炉脢媒
+		 *  	3.1. this.Person(); 拢篓X拢漏 
+		 *  		麓铆脦贸脭颅脪貌拢潞鹿鹿脭矛潞炉脢媒脢脟麓麓陆篓露脭脧贸脢卤赂酶露脭脧贸鲁玫脢录禄炉脢鹿脫脙拢卢this麓煤卤铆碌卤脟掳露脭脧贸隆拢
+		 *                  鹿鹿脭矛潞炉脢媒脧脠脫脷this鹿脴录眉脳脰虏煤脡煤脭脣脨脨脧没脢搂隆拢
+		 *  	3.2. 脳垄脪芒拢潞鹿鹿脭矛潞炉脢媒脰脨碌梅脫脙鹿鹿脭矛潞炉脢媒脢卤拢卢卤脴脨毛路脜脭脷碌脷脪禄脨脨隆拢脭颅脪貌鹿鹿脭矛潞炉脢媒鲁玫脢录禄炉脪陋脧脠脰麓脨脨隆拢
+		 *  	          脮媒脠路脨麓路篓拢潞this(name);
+		 *      3.3. 脥录陆芒鹿鹿脭矛潞炉脢媒碌梅脫脙鹿鹿脭矛潞炉脢媒
+		 *  4. this碌梅脫脙卤戮脌脿潞炉脢媒隆拢   
+		 *  5. 卤脠陆脧脕陆赂枚脠脣脛锚脕盲脢脟路帽脧脿碌脠
 		 *   
 		 */
 		Person p = new Person("Eason");
@@ -30,11 +30,11 @@ public class ThisDemo {
 	}
 }
 /**
- * 属性：
- *  名称
- *  年龄
- * 行为：
- *  说话
+ * 脢么脨脭拢潞
+ *  脙没鲁脝
+ *  脛锚脕盲
+ * 脨脨脦陋拢潞
+ *  脣碌禄掳
  * @author kr
  *
  */
@@ -45,24 +45,24 @@ class Person {
 	public Person() {
 	}
 
-	// 1.1. 同名引出this关键字
+	// 1.1. 脥卢脙没脪媒鲁枚this鹿脴录眉脳脰
 	// 
-	public Person(String name) { // 有参数构造函数
+	public Person(String name) { // 脫脨虏脦脢媒鹿鹿脭矛潞炉脢媒
 		this.name = name;
 	}
 	void speak() {
-		// 4. this调用本类中的函数
+		// 4. this碌梅脫脙卤戮脌脿脰脨碌脛潞炉脢媒
 		this.openMouse();
 		System.out.println(this.name + ":" + this.age);
 	}
 	
 	void openMouse() {
-		System.out.print("啊~ 我是：");
+		System.out.print("掳隆~ 脦脪脢脟拢潞");
 	}
 	
-	// 5. 比较两个人年龄是否相等
+	// 5. 卤脠陆脧脕陆赂枚脠脣脛锚脕盲脢脟路帽脧脿碌脠
 	boolean compare(Person person) {
-		// TODO 年龄比较
+		// TODO 脛锚脕盲卤脠陆脧
 		return false;
 	}
 }
