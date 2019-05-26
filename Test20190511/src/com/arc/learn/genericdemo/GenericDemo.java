@@ -3,8 +3,16 @@ package com.arc.learn.genericdemo;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class GenericDemo {
+import com.arc.learn.classesdemo.Person;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 
+public class GenericDemo<T> {
+
+	GenericDemo(T t) {
+		
+	}
+	
+	
 	public static void main(String[] args) {
 		
 		/**
@@ -16,17 +24,31 @@ public class GenericDemo {
 		 */
 		
 		// TODO Ìí¼Ó·ºÐÍ
-		ArrayList al = new ArrayList();
-		al.add("abc1");
-		al.add("abc2");
-		al.add("abc3");
+		ArrayList<Person> al = new ArrayList<Person>();
+		al.add(new Person("abc", 20));
+//		al.add("abc2");
+//		al.add(123);
 //		al.add(new Integer(1));
 		Iterator it = al.iterator();
 		while(it.hasNext()) {
-			String str = (String)it.next();
-			System.out.println(str);
+			Person p = (Person)it.next();
+			System.out.println(p.getName());
 		}
 		
+		testGeneric(new Person("tt", 20));
+//		testGeneric(new String());
+		
 	}
+	
+	public static <E extends Person> void testGeneric(E t) {
+		t.getAge();
+//		System.out.println(p.getAge());
+	}
+	
 
+}
+
+
+class Son extends Person {
+	
 }

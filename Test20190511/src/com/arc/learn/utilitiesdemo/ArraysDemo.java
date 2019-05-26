@@ -28,19 +28,19 @@ public class ArraysDemo {
 		int[] arr = new int[] {
 			1, 6, 8, 9, 5, 2, 7, 3, 4	
 		};
-		arrayToString(arr);
-		sortArray(arr);
-		arrayToString(arr);
-		int index = binarySearchArray(arr, 5);
-		System.out.println(index);
+//		arrayToString(arr);
+//		sortArray(arr);
+//		arrayToString(arr);
+//		int index = binarySearchArray(arr, 4);
+//		System.out.println(index);
 		// 集合转数组
 		// 优点：可以使用用集合框架方法
 		// 缺点：数组长度不可改变，不能使用集合框架的增删方法
 		// 注意:如果数组元素是基本数据类型,则整个数组作为集合中的一个元素，
 		//     如果数组元素是引用数据类型，则数组中的每一个元素作为集合中的元素。
 		List list = Arrays.asList(arr); 
-		System.out.println(list);
-		System.out.println(list.size()); // 1
+//		System.out.println(list);
+//		System.out.println(list.size()); // 1
 		String[] strs = new String[] {
 				"abc1",
 				"abc2",
@@ -49,14 +49,14 @@ public class ArraysDemo {
 				"abc5"
 		};
 		List<String> strList = Arrays.asList(strs);
-		System.out.println(strList);
-		System.out.println(strList.size()); // 6
+//		System.out.println(strList);
+//		System.out.println(strList.size()); // 6
 		
-//		collectionToArray(); // 集合转数组
+		collectionToArray(); // 集合转数组
 		
 //		testForeach(); // foreach循环
 		
-		testArgs(1,2,3,4,5,6); // 可变参数
+//		testArgs(1,2,3,4,5,6); // 可变参数
 	}
 	
 	/**
@@ -107,7 +107,7 @@ public class ArraysDemo {
 		list.add("abc3");
 		list.add("abc4");
 		list.add("abc5");
-		String[] strArr = list.toArray(new String[1]);
+		String[] strArr = list.toArray(new String[] {});
 		System.out.println(Arrays.toString(strArr));
 		System.out.println(strArr.length);
 	}

@@ -16,9 +16,9 @@ public class MapDemo2 {
 		 */
 //		testHashMap();
 		
-//		testTreeMap();
+		testTreeMap();
 		
-		testLinkedHashMap();
+//		testLinkedHashMap();
 		
 		
 	}

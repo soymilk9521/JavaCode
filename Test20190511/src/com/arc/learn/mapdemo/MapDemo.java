@@ -34,17 +34,18 @@ public class MapDemo {
 		 */
 		
 		Map<Integer, String> map = new HashMap<Integer, String>();
+		
 		// put
 		map.put(2, "aaa");
 		map.put(5, "bbb");
 		map.put(1, "ccc");
 		map.put(7, "ddd");
 		map.put(7, "ggg"); // key相同时，值被覆盖
-		
+		System.out.println(map);
 //		testMap(map);
 //		testKeySet(map);
 //		testEntrySet(map);
-		testValues(map);
+//		testValues(map);
 
 	}
 	
@@ -52,18 +53,18 @@ public class MapDemo {
 		System.out.println(map);
 		
 		// remove
-		System.out.println(map.remove(7));
-		System.out.println(map);
+//		System.out.println(map.remove(7));
+//		System.out.println(map);
 		
-		// containsKey
-		System.out.println(map.containsKey(5));
-		System.out.println(map.containsKey(9));
-		
-		// containsValue
-		System.out.println(map.containsValue("ddd"));
-		
-		// get
-		System.out.println(map.get(5));
+//		// containsKey
+//		System.out.println(map.containsKey(5));
+//		System.out.println(map.containsKey(9));
+//		
+//		// containsValue
+//		System.out.println(map.containsValue("ddd"));
+//		
+//		// get
+//		System.out.println(map.get(5));
 	}
 	
 	
