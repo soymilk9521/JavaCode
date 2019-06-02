@@ -3,6 +3,8 @@ package com.arc.learn.iodemo;
 import java.io.FileReader;
 import java.io.IOException;
 
+import sun.font.TrueTypeFont;
+
 public class FileReaderDemo {
 
 	/**
@@ -13,12 +15,12 @@ public class FileReaderDemo {
 	 */
 	public static void main(String[] args) throws IOException {
 
-		testFileReader();
+//		testFileReader();
 
-		testFileReader2();
-
-		testFileReader3();
-
+//		testFileReader2();
+//
+//		testFileReader3();
+//
 		testFileReader4();
 	}
 
@@ -62,9 +64,10 @@ public class FileReaderDemo {
 		// 将字符数组转换为字符串输出
 		System.out.println(num + ":" + new String(buf)); 
 		num = fr.read(buf); 
-		System.out.println(num + ":" + new String(buf)); 
+		System.out.println(num + ":" + new String(buf, 0, num)); // 0 count
 		num = fr.read(buf); 
-		System.out.println(num + ":" + new String(buf)); 
+		System.out.println(num);
+		System.out.println(num + ":" + (num !=-1 ? new String(buf) : ""));// false ? 表达式1：表达式2
 		// 关闭流资源
 		fr.close();
 	}
@@ -73,7 +76,7 @@ public class FileReaderDemo {
 		// 创建一个字符流的读取流关联文件，如果文件不存在，则抛出异常
 		FileReader fr = new FileReader("demo.txt");
 		// 创建一个字符数组缓冲区
-		char[] buf = new char[3];
+		char[] buf = new char[1024*2];
 		// 定义变量len代表读取到字符个数
 		int len = 0;
 		// 循环读取

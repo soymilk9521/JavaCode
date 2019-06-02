@@ -11,10 +11,10 @@ public class BufferedWriterDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		testBufferedWriter();
+//		testBufferedWriter();
 
-		testBufferedWriter2();
-
+//		testBufferedWriter2();
+//
 		testBufferedWriter3();
 	}
 

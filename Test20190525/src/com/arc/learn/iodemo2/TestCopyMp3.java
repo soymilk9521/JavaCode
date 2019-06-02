@@ -10,8 +10,8 @@ public class TestCopyMp3 {
 
 	public static void main(String[] args) throws IOException {
 		testCopy1();
-		testCopy2();
-		testCopy3();
+//		testCopy2();
+//		testCopy3();
 	}
 
 	private static void testCopy1() throws IOException {

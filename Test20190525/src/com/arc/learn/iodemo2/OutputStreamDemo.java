@@ -21,6 +21,7 @@ public class OutputStreamDemo {
 		fos.write('B'); // 写一个字节
 		fos.write(65);  // 写一个字节
 		fos.write("BGM".getBytes()); // 写一个字节数组
+		fos.write(1065);  // 写一个字节
 
 //		fos.flush();// 不做任何处理
 		fos.close();

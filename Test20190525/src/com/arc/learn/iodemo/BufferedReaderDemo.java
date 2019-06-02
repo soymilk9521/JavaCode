@@ -44,7 +44,8 @@ public class BufferedReaderDemo {
 		String line5 = br.readLine();
 		System.out.println(line5);
 		
-		System.out.println(br.ready()); 
+		line = br.readLine();// null
+		System.out.println(line);
 		
 		br.close();
 	}

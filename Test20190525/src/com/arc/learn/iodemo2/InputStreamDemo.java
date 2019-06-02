@@ -14,7 +14,7 @@ public class InputStreamDemo {
 //		testFileInputStream2();
 //		testFileInputStream3();
 //		testFileInputStream4();
-//		testFileInputStream5();
+		testFileInputStream5();
 	}
 
 	private static void testFileInputStream() throws IOException {
@@ -22,7 +22,7 @@ public class InputStreamDemo {
 		FileInputStream fis = new FileInputStream("c:\\demo\\b.txt");
 		// 读取一个字节
 		int b = fis.read();
-		System.out.println(b);
+		System.out.println((char)b);
 		int b1 = fis.read();
 		System.out.println(b1);
 		int b2 = fis.read();

@@ -27,7 +27,7 @@ public class SystemOutDemo {
 		bos.write('a');
 		bos.write(98);
 		bos.write("¹þ¹þ".getBytes());
-		bos.flush();
+		bos.close();
 	}
 
 }

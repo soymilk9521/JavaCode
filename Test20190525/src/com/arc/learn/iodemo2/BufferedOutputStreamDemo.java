@@ -7,7 +7,7 @@ import java.io.IOException;
 public class BufferedOutputStreamDemo {
 
 	public static void main(String[] args) throws IOException {
-		testBufferOutputStream();
+		testBufferOutputStream2();
 	}
 
 	private static void testBufferOutputStream() throws IOException {

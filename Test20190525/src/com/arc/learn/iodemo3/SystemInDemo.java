@@ -10,10 +10,10 @@ public class SystemInDemo {
 //		testSystemIn();
 //		testSystemIn2();
 //		testSystemIn3();
-		testSystemIn4();
-		
-//		System.out.println((int)'\r');
-//		System.out.println((int)'\n');
+//		testSystemIn4();
+//		
+		System.out.println((int)'\r');
+		System.out.println((int)'\n');
 	}
 
 	private static void testSystemIn() throws IOException {
